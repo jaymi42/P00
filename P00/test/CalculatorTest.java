@@ -27,13 +27,14 @@ public class CalculatorTest {
 	@Test
 	public final void testDivide() {
 		int a = 50;
-		int b = 5;
+		int b = 10;
 		
 		Calculator cal = new Calculator();
 		int actual = cal.divide(a, b);
 		
-		int expected = 10;
-		assertEquals(actual, expected);
+		int expected = 5;
+		assertEquals("Denominator is 0",actual, expected);
+		
 	}
 	
 	@Test
